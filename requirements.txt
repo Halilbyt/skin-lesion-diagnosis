@@ -1,0 +1,20 @@
+# Backend and Data Processing Operations
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+opencv-python
+
+# Deep Learning
+tensorflow
+torch
+torchvision
+
+# Backend
+fastapi
+uvicorn
+python-multipart
+
+# Extra tools
+jupyterlab
