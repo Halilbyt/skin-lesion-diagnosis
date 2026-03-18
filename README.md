@@ -21,5 +21,5 @@ Utilizing the **HAM10000 dataset**, which contains over 10,000 images categorize
 
 1. **Clone the repository:**
    ```bash
-   git clone [Your-GitHub-Repo-Link-Here]
-   cd [Your-Repository-Name]
+   git clone https://github.com/Halilbyt/skin-lesion-diagnosis.git
+   cd skin-lesion-diagnosis
