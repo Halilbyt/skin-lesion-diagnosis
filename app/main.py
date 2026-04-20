@@ -19,3 +19,15 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"]
 )
+
+app.include_router(api_routher,prefix="/api/v1")
+
+if os.path.isdir(FRONTEND_DIR):
+    app.mount("/static", StaticFiles(directory=FRONTEND_DIR), name="static")
+
+@app.get("/")
+async def read_root():
+    index_path = os.path.join(FRONTEND_DIR,"index.html")
+    if os.path.isfile(index_path):
+        return FileResponse(index_path)
+    return {"status": "Server live. Awaiting index.html in the frontend folder."}
