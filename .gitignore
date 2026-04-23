@@ -3,7 +3,7 @@ data/
 *.zip
 
 
-models/
+saved_models/
 *.h5
 *.hdf5
 *.pt
