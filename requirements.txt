@@ -19,3 +19,5 @@ python-multipart
 
 # Extra tools
 jupyterlab
+imbalanced-learn
+xgboost
