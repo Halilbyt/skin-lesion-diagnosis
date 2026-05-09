@@ -1,0 +1,50 @@
+# =========================
+# Virtual Environments
+# =========================
+venv/
+env/
+.venv/
+
+# =========================
+# Python Cache & Bytecode
+# =========================
+__pycache__/
+*.py[cod]
+*~
+.pytest_cache/
+
+# =========================
+# Environment Variables / Secrets
+# =========================
+.env
+
+# =========================
+# Jupyter Notebooks
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Datasets and Extracted Features
+# =========================
+dataset/
+notebooks/dataset/
+notebooks/extraced_features/
+*.npy
+
+# =========================
+# Machine Learning Models & Weights
+# =========================
+saved_models/
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.pkl
+*.joblib
+
+# =========================
+# OS & IDE Specific
+# =========================
+.DS_Store
+.vscode/
+.idea/
