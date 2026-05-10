@@ -271,7 +271,7 @@
 
             // Translate class names
             const readableName = classNamesMapping[data.prediction] || data.prediction;
-            const percentage = (data.confidence * 100).toFixed(2);
+            const percentage = (data.confidence * 100).toFixed(6);
 
             document.getElementById('predictionName').innerText = readableName;
             document.getElementById('confidenceScore').innerText = `${percentage}%`;
@@ -284,7 +284,7 @@
                 .sort((a, b) => b[1] - a[1]);
 
             sortedProbs.forEach(([key, value]) => {
-                const probPercent = (value * 100).toFixed(2);
+                const probPercent = (value * 100).toFixed(6);
                 const className = classNamesMapping[key] || key;
                 
                 // Highlight the winning class in blue, others in gray
